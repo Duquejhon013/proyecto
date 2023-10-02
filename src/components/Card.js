@@ -9,7 +9,8 @@ import ScrollArea from './Scrool'
 export  function Card() {
   return (
     <div className="flex flex-wrap justify-center  ">
-     <div className="max-w-sm bg-orange border border-orange-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 my-12 mx-12">
+     
+     <div className="max-w-xs lg:max-w-sm bg-yellow-500 border border-yellow-300 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 my-6 lg:my-12 mx-12">
       <a href="#">
       <ScrollArea/>
       </a>
@@ -63,7 +64,7 @@ export  function Card() {
 
     {/*  card 2 */}
 
-    <div className="max-w-sm bg-orange border border-orange-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 my-12 mx-12">
+    <div className="max-w-xs lg:max-w-sm bg-yellow-500 border border-yellow-300 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 my-6 lg:my-12 mx-12">
       <a href="#">
       <ScrollArea/>
       </a>
@@ -116,7 +117,7 @@ export  function Card() {
 
 {/*  card 3 */}
 
-    <div className="max-w-sm bg-orange border border-orange-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 my-12 mx-12">
+    <div className="max-w-xs lg:max-w-sm bg-yellow-500 border border-yellow-300 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 my-6 lg:my-12 mx-12">
       <a href="#">
       <ScrollArea/>
       </a>
@@ -170,7 +171,7 @@ export  function Card() {
 {/*  card 4 */}
 
 
-    <div className="max-w-sm bg-orange border border-orange-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 my-12 mx-12">
+    <div className="max-w-xs lg:max-w-sm bg-yellow-500 border border-yellow-300 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 my-6 lg:my-12 mx-12">
       <a href="#">
       <ScrollArea/>
       </a>
@@ -222,7 +223,7 @@ export  function Card() {
 
 {/*  card 5 */}
 
-    <div className="max-w-sm bg-orange border border-orange-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 my-12 mx-12">
+    <div className="max-w-xs lg:max-w-sm bg-yellow-500 border border-yellow-300 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 my-6 lg:my-12 mx-12">
       <a href="#">
       <ScrollArea/>
       </a>
@@ -274,7 +275,7 @@ export  function Card() {
 
     {/*  card 6 */}
 
-    <div className="max-w-sm bg-orange border border-orange-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 my-12 mx-12">
+    <div className="max-w-xs lg:max-w-sm bg-yellow-500 border border-yellow-300 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 my-6 lg:my-12 mx-12">
       <a href="#">
       <ScrollArea/>
       </a>

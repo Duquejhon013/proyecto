@@ -3,8 +3,11 @@ import React from 'react';
 export function AvSearch() {
   return (
     <>
+    <div className='  grid-cols-1 sm:grid-cols-6 '>
+
+   
       <div className="w-1/2 justify-center p-4 text-center bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-slate-800 dark:border-gray-700 my-10 mx-auto text-white">
-        <div className='flex space-x-4 scroll-pl-6 scroll-mr-5  text-gray-900 dark:text-whit '>
+        <div className='flex space-x-4 scroll-pl-6 scroll-mr-10  text-gray-900 dark:text-whit '>
         <label
   htmlFor="UserEmail"
   className="relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600  bg-gray-700"
@@ -127,6 +130,7 @@ export function AvSearch() {
 
 
         </div>
+      </div>
       </div>
     </>
   );

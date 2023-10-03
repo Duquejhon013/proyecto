@@ -1,16 +1,16 @@
 
 import React from 'react';
-import Navbars from './Navbar';
-import Card from './Card';
+import Navbars from './components_home/Navbar';
+import AvSearch from'./components_home/AvSearch';
+import Card from './components_home/Card';
 // import Content from './Content';
-import Moda from './Moda';
-import AvSearch from'./AvSearch';
-import Footer from'./Footer';
+import Moda from './components_home/Moda';
+import Footer from'./components_home/Footer';
 
 
 export function Home() {
   return (
-    <div className="App bg-slate-100">
+    <div className="Home bg-slate-100">
 
       <Navbars />
       <AvSearch /> 

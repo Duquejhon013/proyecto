@@ -1,31 +1,93 @@
 import React from 'react';
-// import loginImg from './assets/casa05.jpg';
+import{FcGoogle} from 'react-icons/fc'
+
 export function  Login() {
   return (
-    <div className='grid grid-cols-1 sm:grid-cols-2 h-screen w-full'>
-        {/* <div className='hidden sm:block'>
-            <img className='w-full h-full object-cover' src={loginImg} alt="" />
-        </div> */}
-
-        <div className='bg-slate-900 flex flex-col justify-center'>
-            <form className='max-w-[400px] w-full mx-auto bg-white p-4'>
-                <h2 className='text-4xl font-bold text-center py-6'>Crea tu Cuenta</h2>
-                <div className='flex flex-col py-2'>
-                    <label>Username</label>
-                    <input className='border p-2' type="text" />
-                </div>
-                <div className='flex flex-col py-2'>
-                    <label>Password</label>
-                    <input className='border p-2' type="password" />
-                </div>
-                <button className='border w-full my-5 py-2 bg-indigo-600 hover:bg-indigo-500 text-white'>Sign In</button>
-                <div className='flex justify-between'>
-                    <p className='flex items-center'><input className='mr-2' type="checkbox" /> Remember Me</p>
-                    <p>Create an account</p>
-                </div>
-            </form>
+  <div className="w-full h-screen flex items-start">
+    <div className='relative w-10/12 h-full flex flex-col'>
+        <div className='absolute top-[25%] left-[10%] flex flex-col'>
+            <h1 className='tex-4x1 text-white font-bold my-4'>Turn Your Ideas into reality</h1>
+            <p className='text-x1 text-white font-normal'>start for free and get attrative</p>
         </div>
+        <img src='https://definicion.de/wp-content/uploads/2011/01/casa-2.jpg'
+        className='w-full h-full object-cover '
+        />
     </div>
+
+
+    <div className='w-full h-full bg-white flex flex-col justify-between'>
+        <h1 className='text-base text-black'>Brand</h1>
+
+
+        <div className=' flex flex-col max-w-[550px]  mx-80'>
+          <div className='w-full flex flex-col mb-2'>
+            <h3 className='text-3x1 font-semibold mb-4 text-center'>Login</h3>
+             <p className='text-base mb-2 text-center'>Bienvenidos ingrese sus detalles</p>
+            </div>
+            
+         <div className='w-full flex flex-col'>
+            <input 
+            type='email'
+            placeholder='Email'
+            className='w-full text-black py-2 my-2 bg-transparent border-b border-black outline-none focus:outline-none'
+            />
+
+           <input 
+            type='Password'
+            placeholder='Contraseña'
+            className='w-full text-black py-2 my-2 bg-transparent border-b border-black outline-none focus:outline-none'
+            />
+          </div>
+
+         <div className='w-full flex items-center justify-between'>
+            <div className='w-full flex items-center'>
+                <input type='checkbox' className='w-4 h-4 mr-2'/>
+                <p className='text-sm'>Recordar</p>
+            </div>
+
+            <p className='text-sm font-medium whitespace-nowrap cursor-pointer underline underline-offset-2'>Recordar Contraseña</p>
+         </div>
+
+         <div className='w-full flex flex-col my-4'>
+            <button className='w-full text-white my-2 bg-black rounded-md p-4 text-center flex items-center justify-center'>Iniciar Sesión</button>
+            <button className='w-full text-black my-2 font-semibold bg-white border-2 border-black rounded-md p-4 text-center flex items-center justify-center'>Crear Cuenta</button>
+         </div>
+         </div>
+
+
+         <div className='w-full flex items-center justify-center relative py-2'>
+            <div className='w-10/12 h-[1px] bg-black'></div>
+            <p className=' text-lg absolute text-black/80 bg-white'>Ingresa con </p>
+         </div>
+
+        <div className=''>
+        <div className='w-1/2 text-black  font-semibold bg-white border-2 border-black rounded-md p-4 text-center flex items-center justify-center mx-64'>
+       <FcGoogle size={32}/>
+       Ingresar con GOOGLE
+       </div>
+
+        </div>
+    
+    
+
+        
+        
+
+          <div className='w-full flex items-center justify-center p-12'>
+          <p className='text-sm font-normal text-black'>No tienes Cuenta? <span className='font-semibold underline underline-offset-2 cursor-pointer'>Crear tu Cuenta</span></p>
+          </div>
+         </div>
+    </div>
+
+
+
+
+
+   
+
+    
+
+ 
   );
 }
 

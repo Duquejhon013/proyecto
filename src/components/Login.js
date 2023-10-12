@@ -1,91 +1,64 @@
 import React from 'react';
 import{FcGoogle} from 'react-icons/fc'
 
+
+
 export function  Login() {
   return (
-  <div className="w-full h-screen flex items-start">
-    <div className='relative w-10/12 h-full flex flex-col'>
-        <div className='absolute top-[25%] left-[10%] flex flex-col'>
-            <h1 className='tex-4x1 text-white font-bold my-4'>Turn Your Ideas into reality</h1>
-            <p className='text-x1 text-white font-normal'>start for free and get attrative</p>
-        </div>
-        <img src='https://definicion.de/wp-content/uploads/2011/01/casa-2.jpg'
-        className='w-full h-full object-cover '
-        />
-    </div>
+    <section class="bg-gradient-to-r from-orange-500 to-white min-h-screen flex items-center justify-center">
 
-
-    <div className='w-full h-full bg-white flex flex-col justify-between'>
-        <h1 className='text-base text-black'>Brand</h1>
-
-
-        <div className=' flex flex-col max-w-[550px]  mx-80'>
-          <div className='w-full flex flex-col mb-2'>
-            <h3 className='text-3x1 font-semibold mb-4 text-center'>Login</h3>
-             <p className='text-base mb-2 text-center'>Bienvenidos ingrese sus detalles</p>
-            </div>
-            
-         <div className='w-full flex flex-col'>
-            <input 
-            type='email'
-            placeholder='Email'
-            className='w-full text-black py-2 my-2 bg-transparent border-b border-black outline-none focus:outline-none'
-            />
-
-           <input 
-            type='Password'
-            placeholder='Contraseña'
-            className='w-full text-black py-2 my-2 bg-transparent border-b border-black outline-none focus:outline-none'
-            />
+    <div class="bg-gray-100 flex rounded-2xl shadow-lg max-w-3xl p-5 items-center">
+      
+      <div class="md:w-1/2 px-8 md:px-16">
+        <h2 class="font-bold text-2xl text-[#002D74]">Iniciar Sesión</h2>
+        <p class="text-xs mt-4 text-[#002D74]">Por Favor ingrese los datos necesarios</p>
+  
+        <form action="" class="flex flex-col gap-4">
+          <input class="p-2 mt-8 rounded-xl border" type="email" name="email" placeholder="Email"/>
+          <div class="relative">
+            <input class="p-2 rounded-xl border w-full" type="password" name="password" placeholder="Password"/>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray" class="bi bi-eye absolute top-1/2 right-3 -translate-y-1/2" viewBox="0 0 16 16">
+              <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+              <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+            </svg>
           </div>
-
-         <div className='w-full flex items-center justify-between'>
-            <div className='w-full flex items-center'>
-                <input type='checkbox' className='w-4 h-4 mr-2'/>
-                <p className='text-sm'>Recordar</p>
-            </div>
-
-            <p className='text-sm font-medium whitespace-nowrap cursor-pointer underline underline-offset-2'>Recordar Contraseña</p>
-         </div>
-
-         <div className='w-full flex flex-col my-4'>
-            <button className='w-full text-white my-2 bg-black rounded-md p-4 text-center flex items-center justify-center'>Iniciar Sesión</button>
-            <button className='w-full text-black my-2 font-semibold bg-white border-2 border-black rounded-md p-4 text-center flex items-center justify-center'>Crear Cuenta</button>
-         </div>
-         </div>
-
-
-         <div className='w-full flex items-center justify-center relative py-2'>
-            <div className='w-10/12 h-[1px] bg-black'></div>
-            <p className=' text-lg absolute text-black/80 bg-white'>Ingresa con </p>
-         </div>
-
-        <div className=''>
-        <div className='w-1/2 text-black  font-semibold bg-white border-2 border-black rounded-md p-4 text-center flex items-center justify-center mx-64'>
-       <FcGoogle size={32}/>
-       Ingresar con GOOGLE
-       </div>
-
+          <button class="bg-[#002D74] rounded-xl text-white py-2 hover:scale-105 duration-300">Iniciar Sesión</button>
+        </form>
+  
+        <div class="mt-6 grid grid-cols-3 items-center text-gray-400">
+          <hr class="border-gray-400"/>
+          <p class="text-center text-sm">OR</p>
+          <hr class="border-gray-400"/>
         </div>
+  
+        <button class="bg-white border py-2 w-full rounded-xl mt-5 flex justify-center items-center text-sm hover:scale-105 duration-300 text-[#002D74]">
+          <svg class="mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="25px">
+            <path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z" />
+            <path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z" />
+            <path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z" />
+            <path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z" />
+          </svg>
+          Login with Google
+        </button>
+  
+        <div class="mt-5 text-xs border-b border-[#002D74] py-4 text-[#002D74]">
+          <a href="#">Forgot your password?</a>
+        </div>
+  
+        <div class="mt-3 text-xs flex justify-between items-center text-[#002D74]">
+          <p>Don't have an account?</p>
+          <button class="py-2 px-5 bg-white border rounded-xl hover:scale-110 duration-300">Registrarse</button>
+        </div>
+      </div>
+  
     
-    
+      <div class="md:block hidden w-1/2">
+  <img class="rounded-2xl float-left  " src="https://images.adsttc.com/media/images/623c/4fa0/3e4b/3145/3000/001b/newsletter/_d_ambrosio_07._copy.jpg?1648119692" alt="Imagen" style={{ width: '100%', height: '450px' }} />
+</div>
 
-        
-        
 
-          <div className='w-full flex items-center justify-center p-12'>
-          <p className='text-sm font-normal text-black'>No tienes Cuenta? <span className='font-semibold underline underline-offset-2 cursor-pointer'>Crear tu Cuenta</span></p>
-          </div>
-         </div>
     </div>
-
-
-
-
-
-   
-
-    
+  </section>
 
  
   );
